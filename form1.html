@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Scheduler</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      background-color: rgb(243, 243, 254);
+    }
+  </style>
+  <body class="regisform">
+    <form action="mailto:dummy@gmail.com" method="post" >
+      <fieldset>
+        <legend>Registration Details</legend>
+        <table align="center">
+          <tr>
+            <td><label for="uname">University:</label></td>
+            <td><input type="text" id="uname" name="uname" required /></td>
+          </tr>
+          <tr>
+            <td><label for="institute">Institute:</label></td>
+            <td><input type="text" name="institute" id="institute" /></td>
+          </tr>
+          <tr>
+            <td><label for="branch">branch</label></td>
+
+            <td>
+              <select name="branch" id="branch ">
+                <option value="--select--">--select</option>
+                <option value="ECE">ECE</option>
+                <option value="MECH">MECH</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="degree">Degree</label></td>
+
+            <td>
+              <select name="degree" id="degree">
+                <option value="--select--">--select</option>
+                <option value="BE">ECE</option>
+                <option value="BTECH">MECH</option>
+              </select>
+              <input type="radio" name="pursuing" id="pursuing" /><span
+                >Pursuing`</span
+              >
+              <input type="radio" name="completed" id="completed" /><span
+                >Completed</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cpi">Average CPI</label></td>
+            <td>
+              <input type="number" name="cpi" id="cpi" class="mytext"  /><span> Upto </span
+              ><input type="number" name="sems" id="sems" class="mytext"  />
+              <span> TH Semesters </span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="exps">Experience</label></td>
+            <td><input type="number" name="exps" id="exps" class="mytext" /><span> Years</span></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="blog">Your url or blog</label>
+            </td>
+            <td>
+              <input type="url" name="blog" id="blog" />
+            </td>
+          </tr>
+        </table>
+    </form>
+  </body>
+</html>
